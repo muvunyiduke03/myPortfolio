@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div class="logo">MNHD</div>
     <header class="main-header">
         <div class="header-container">
             <nav class="nav-links">
@@ -63,5 +65,16 @@
             <p>2025 © By MUVUNYI Duke. All rights reserved.</p>
         </footer>
     </div>
+
+    <script>
+        const Logo = document.querySelector('.logo');
+        if (Logo) {
+        Logo.style.cursor = 'pointer';
+        Logo.addEventListener('click', () => {
+            window.location.href= 'index.html';
+        });
+}
+    </script>
+
 </body>
 </html>

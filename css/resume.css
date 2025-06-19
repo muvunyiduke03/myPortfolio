@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin-top: 50px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.logo{
+  font-weight: bold;
+  margin-right: 100%;
+  font-size: 30px; 
+  padding-right: 55% ;
+  font-family: 'Michroma';
+  cursor: pointer;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2c3e50;
+  transition: width 0.3s ease;
+}
+
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+body {
+  background-color: #f8f9fa;
+  font-size: 1rem;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fcb900;
+  position: relative;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #000000;
+  margin: 2rem 0 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #4b4c4d;
+  margin-bottom: 0.5rem;
+}
+
+p, li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+.job, .edu-item {
+  display: flex;
+  margin-bottom: 1.5rem;
+  gap: 1.5rem;
+}
+
+.job-period, .edu-period {
+  flex: 0 0 120px;
+  font-weight: 600;
+  color: #7f8c8d;
+}
+
+.job-details, .edu-details {
+  flex: 1;
+}
+
+.skills ul {
+  list-style-type: none;
+}
+
+.skills ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  list-style-type: none;
+}
+
+.skills li::before {
+  content: '';
+  color: #4b4c4d;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.contact-info {
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info strong {
+  display: inline-block;
+  width: 60px;
+  color: #2c3e50;
+}
+
+.copyright {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}

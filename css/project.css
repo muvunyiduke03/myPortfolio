@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
 /* Base Styles */
 * {
   margin: 0;
@@ -16,6 +18,14 @@
   align-items: center;
 }
 
+.logo{
+  font-weight: bold;
+  margin-right: 100%;
+  font-size: 30px; 
+  padding-right: 55% ;
+  font-family: 'Michroma';
+  cursor: pointer;
+}
 
 .nav-links {
   display: flex;
