@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  color: #000000;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: thistle;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.9rem;
+  border-left: 1px solid #ccc;
+  padding-left: 8px;
+}
+
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.heroImage {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 6px solid white;
+  background: #aaa;
+}
+
+.heroText {
+  flex: 1 1 400px;
+  padding: 2rem;
+}
+
+.heroText h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.heroText h2 {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.heroText p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.8rem 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 50px;
+background-color: #f4f4f4;
+}
+
+.logo {
+font-weight: bold;
+margin-right: 100%;
+font-size: 18px;
+padding-right: 55% ;
+}
+
+.navLinks {
+display: flex;
+margin-left: 50%;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.navLinks a {
+text-decoration: none;
+color: #2c3e50;
+font-weight: 500;
+font-size: 1.1rem;
+position: relative;
+transition: color 0.3s ease;
+}
+
+.navLinks a::after {
+content: '';
+position: absolute;
+bottom: -3px;
+left: 0;
+width: 0;
+height: 1px;
+background-color: #2c3e50;
+transition: width 0.3s ease;
+}
+
+.navLinks a:hover::after {
+width: 100%;
+}
+
+
+.resumeButton {
+  background-color: #fcb900;
+}
+
+.projectsButton {
+  background-color: #fc4a1a;
+}
+
+.contactButton {
+  background-color: #3a86ff;
+}
+
+
+@media (max-width: 768px) {
+nav {
+flex-direction: column;
+align-items: center;
+padding: 15px 0;
+}
+
+
+.navLinks {
+width: 100%;
+flex-direction: column;
+align-items: center;
+margin-top: 15px;
+}
+
+.navLinks li {
+padding: 10px 0;
+}
+
+.hero {
+flex-direction: column;
+text-align: center;
+padding: 20px;
+}
+.buttons {
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.buttons a {
+margin: 5px;
+width: 100%;
+max-width: 200px;
+}
+
+footer > div {
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+footer p {
+float: none;
+text-align: center;
+padding-right: 0;
+margin-top: 20px;
+}
+}
+
+.heroImage img {
+max-width: 100%;
+display: block;
+}
+
+.logo {
+padding: 10px 15px;
+margin-left: 10px;
+white-space: nowrap;
+font-size: clamp(1.2rem, 4vw, 1.8rem);
+}
+
+header {
+overflow: visible;
+padding: 10px 0;
+}
+
+@media (max-width: 480px) {
+.logo {
+margin-left: 5px;
+padding: 8px 10px;
+font-size: 1.3rem;
+}
+}
