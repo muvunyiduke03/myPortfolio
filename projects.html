@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duke - Projects</title>
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="project.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="logo">MNHD</div>
     <header class="main-header">
         <div class="header-container">
-            <nav class="nav-links">
+            <div class="logo">MNHD</div>
+            <nav class="nav-links" id="navLinks">
                 <a href="index.html">Home</a>
                 <a href="resume.html">Resume</a>
+                <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
             </nav>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
-    <div class="container">
-        <header>
+
     <div class="container">
         <header>
             <h1>My Projects</h1>
@@ -28,39 +32,37 @@
         </header>
 
         <main>
-            <!-- Project 1 -->
+
+            <!--Project 1-->
             <section class="project-card">
-                <div class="project-image">
-                    <img src="images/GradeCalculator.jpg" alt="GradeCalculator screenshot">
-                </div>
                 <div class="project-details">
-                    <h2>Grade Calculator</h2>
+                    <h2>Imanzi Kitchen</h2>
                     <p class="project-description">
-                        This is a web app that I built to help me calculate my grades and keep track with my GPA.
+                        A fast, mobile friendly website template built for restaurants, featuring an online menu with
+                        photos and prices, a one tap WhatsApp booking button, embedded location and hours, and a
+                        photo gallery designed to help restaurants convert online visitors into walk-ins and bookings.
                     </p>
-                    <p class="project-role">
-                        I created the HTML and CSS codes for the web app.
+                    <p class="project-role">I designed and built the full frontend, from layout and styling to the WhatsApp integration and mobile-responsive design.</p>
+                    <a href="https://restaurant-demo-theta-nine.vercel.app/" class="project-link" target="_blank" rel="noopener">Visit Site</a>
+                </div>
+            </section>
+
+            <!--Project 2-->
+            <section class="project-card">
+                <div class="project-details">
+                    <h2>Echelon Drive Services</h2>
+                    <p class="project-description">
+                        A chauffeur booking platform connecting busy professionals, tourists, and anyone needing
+                        reliable transport with vetted, professional chauffeurs book a driver on demand or in
+                        advance, without relying on ride hailing apps not built for this use case.
                     </p>
-                    <a href="https://github.com/muvunyiduke03/gpacalc.git" target="_blank" class="project-link">
-                        Visit App
-                    </a>
+                    <p class="project-role">I worked on the frontend, focusing on a smooth booking flow and a clean, trustworthy interface.</p>
+                    <p style="color: darksalmon;"><em>Still Under Development</em></p>
+                    <a class="project-link" target="_blank" rel="noopener" href="https://echelon-drive-services.vercel.app/">Visit Site</a>
                 </div>
             </section>
 
             <!-- Project 3 -->
-            <section class="project-card">
-                <div class="project-details">
-                    <h2>Nexus Irrigation System</h2>
-                    <p class="project-description">
-                        It is a system that helps farmers to control time for irrigation and get information of their crops.
-                    </p>
-                    <a href="https://github.com/Abdalazizi/Nexus_irigation_system.git" target="_blank" class="project-link">
-                        View Prototype
-                    </a>
-                </div>
-            </section>
-
-            <!-- Project 4 -->
             <section class="project-card">
                 <div class="project-details">
                     <h2>Smart Parking Management System</h2>
@@ -68,14 +70,12 @@
                         A full-stack web application for managing parking spaces, reservations, and payments. 
                         The system supports two types of users: Drivers (who book parking spots) and Parking Operators (who manage parking spots).
                     </p>
-                    <p>I worked on the backend of the application using Python(FLASK), REST API and the database using MYSQL</p>
-                    <a href="https://smart-space-system.netlify.app/" target="_blank" class="project-link">
-                        View Prototype
-                    </a>
+                    <p class="project-role">I worked on the backend of the application using Python(FLASK), REST API and the database using MYSQL</p>
+                    <p style="color: blueviolet;">Details under NDA</p>
                 </div>
             </section>
 
-            <!-- Project 5 -->
+            <!-- Project 4 -->
             <section class="project-card">
                 <div class="project-details">
                     <h2>YAN web platform</h2>
@@ -84,30 +84,8 @@
                         It will help YAN to give trainings, assignments and track the performances of its members.<br>
                         Applicants can apply to join YAN via the platform and the committee will be able to view their applications, accept or reject the applications.
                     </p>
-                    <p>I worked on the Frontend of the platform, I used HTML, CSS for styling and JavaScript for interactivity of the platform and integration with the backend.</p>
-                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#chat/home" target="_blank" class="project-link">
-                        View Prototype
-                    </a>
-                </div>
-            </section>
-
-            <!-- Project 6 -->
-            <section class="project-card">
-                <div class="project-details">
-                    <h2>Kivu Appointment And Queue Management System</h2>
-                    <p class="project-description">
-                        This is a personal project of mine that I am working on that will help patients to book appointments in hospitals.<br>
-                        It will allow the Doctors, Nurses and Receptionists at the hospital to know patients they have for the day.
-                        Doctors can set days that they will be available for consultations in the hospital.<br>
-                        Patients can book appointments based on the available dates set by doctors and can choose time of their appointments.
-                    </p>
-                    <p>
-                        I worked on both the Frontend and backend of the System. On the fronted I used HTML, CSS for styling and JavaScript for interactivity of the platform. <br>
-                        On the backend, I used Python, REST API and MYSQL for the database.
-                    </p>
-                    <a href="https://kivu-haqms.up.railway.app/" target="_blank" class="project-link">
-                        View Prototype
-                    </a>
+                    <p class="project-role">I worked on the Frontend of the platform, I used HTML, CSS for styling and JavaScript for interactivity of the platform and integration with the backend.</p>
+                    <p style="color: blueviolet;">Details under NDA</p>
                 </div>
             </section>
         </main>
@@ -117,15 +95,7 @@
         </footer>
     </div>
 
-    <script>
-        const Logo = document.querySelector('.logo');
-        if (Logo) {
-        Logo.style.cursor = 'pointer';
-        Logo.addEventListener('click', () => {
-            window.location.href= 'index.html';
-        });
-}
-    </script>
+    <script src="nav.js"></script>
 
 </body>
 </html>

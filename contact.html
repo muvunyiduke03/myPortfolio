@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duke - Contact</title>
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
-        <div class="logo">MNHD</div>
         <div class="header-container">
-            <nav class="nav-links">
+            <div class="logo">MNHD</div>
+            <nav class="nav-links" id="navLinks">
                 <a href="index.html">Home</a>
                 <a href="resume.html">Resume</a>
                 <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
             </nav>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
+
     <div class="title">
         <h1>MUVUNYI Duke</h1>
     </div>
@@ -25,21 +31,32 @@
         <main>
             <section class="contact-section">
                 <h2>Contacts</h2>
-                <p class="subtitle">Looking forward to hearing from you</p>
+                <p class="subtitle">In need of a website or web app? Let's talk about what you need.</p>
                 
                 <div class="contact-info">
                     <div class="contact-item">
                         <strong>Phone</strong>
-                        <span>+(250)-788-537-967</span>
+                        <a href="tel:+250788537967">0788537967</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>WhatsApp</strong>
+                        <a href="https://wa.me/250788537967" target="_blank" rel="noopener">Chat with me</a>
                     </div>
                     <div class="contact-item">
                         <strong>Email</strong>
-                        <span>dukeherve3@gmail.com</span>
+                        <a href="mailto:dukeherve3@gmail.com">dukeherve3@gmail.com</a>
                     </div>
-
                     <div class="contact-item">
                         <strong>Instagram</strong>
-                        <span>thatone__duke</span>
+                        <a href="https://www.instagram.com/thatone__duke?stkn=azBtNGV3OWhucDB4" target="_blank" rel="noopener">thatone__Duke</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>LinkedIn</strong>
+                        <a href="https://www.linkedin.com/in/muvunyiduke" target="_blank" rel="noopener">muvunyiduke</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Github</strong>
+                        <a href="https://github.com/muvunyiduke03" target="_blank" rel="noopener">muvunyiduke03</a>
                     </div>
                 </div>
             </section>
@@ -49,14 +66,6 @@
         </footer>
     </div>
 
-    <script>
-        const Logo = document.querySelector('.logo');
-        if (Logo) {
-        Logo.style.cursor = 'pointer';
-        Logo.addEventListener('click', () => {
-            window.location.href= 'index.html';
-        });
-}
-    </script>
+    <script src="nav.js"></script>
 </body>
 </html>

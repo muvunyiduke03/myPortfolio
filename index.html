@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muvunyi Duke</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
+  <header class="main-header">
+    <div class="header-container">
       <div class="logo">MNHD</div>
-      <ul class="navLinks">
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <section class="hero">
@@ -41,22 +46,18 @@
   </section>
 
   <footer>
-
     <div class="socialLinks">
-
       <a href="https://github.com/muvunyiduke03" target="_blank" aria-label="GitHub">
         <i class="fab fa-github fa-2x"></i>
       </a>
-
       <a href="https://www.instagram.com/thatone__duke/?__pwa=1#" target="_blank" aria-label="Instagram">
         <i class="fab fa-instagram fa-2x"></i>
       </a>
-
     </div>
-
     <p>All copyrights reserved by © MUVUNYI Duke</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- <script src="script.js"></script> -->
+  <script src="nav.js"></script>
 </body>
 </html>

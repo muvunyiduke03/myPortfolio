@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duke - Resume</title>
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="resume.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 </head>
 <body>
 
-    <div class="logo">MNHD</div>
-     <header class="main-header">
+    <header class="main-header">
         <div class="header-container">
-            <nav class="nav-links">
+            <div class="logo">MNHD</div>
+            <nav class="nav-links" id="navLinks">
                 <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
             </nav>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
+
     <div class="container">
         <header>
             <h1>Resume</h1>
@@ -96,15 +102,7 @@
         </footer>
     </div>
 
-    <script>
-        const Logo = document.querySelector('.logo');
-        if (Logo) {
-        Logo.style.cursor = 'pointer';
-        Logo.addEventListener('click', () => {
-            window.location.href= 'index.html';
-        });
-}
-    </script>
+    <script src="nav.js"></script>
 
 </body>
 </html>
